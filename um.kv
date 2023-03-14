@@ -65,130 +65,156 @@
         GridLayout:
             orientation: "lr-tb"
             size_hint_y: None
+            size_hint_x: 1
             height: 50
             row_default_height: 60
             cols:2
 
             Label:
-                text: 'Arrogant But Effective'
+                text: 'Arrogant But Effective:\n Csata után: Bullseye a harc győztese. Mozgasd Bullseye-t maximum 2 mezőt.'
+                size_hint: None, None
+                height: 60
+
+            Image:
+                source: 'lila22.png'
+                allow_stretch: True
+                keep_ratio: True
+                pos_hint: {"x":0.9, "top":0.9}
+                size_hint: None, None
+                height: 60
+
+            Label:
+                text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                size_hint: 1, None
+                height: 60  
+            
+            Image:
+                source: 'lila22.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'lila 2'
-                size_hint: 0.5, None
-                height: 30
+                text: 'For My Next Trick:\ Csata után: Mozgasd Bullseyet egy mező távolságra. Húzz egy kártyát.\n Kapsz egy további akciót'
+                size_hint: 1, None
+                height: 60
 
+            Image:
+                source: 'piros22.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint: 1, None
+                height: 60
+            
             Label:
-                text: 'Feint'
+                text: "I'm Better And I'll Prove It:\n Csata során: Ha már nyertél egy csatát ebben a körben, ennek a kártyának az értéke 6."
                 size_hint: 1, None
                 height: 60  
             
-            Label:
-                text: 'lila 2'
-                size_hint: 0.5, None
-                height: 30 
-
-            Label:
-                text: 'For My Next Trick'
+            Image:
+                source: 'lila22.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'piros 2'
-                size_hint: 1, None
-                height: 30
-            
-            Label:
-                text: "I'm Better And I'll Prove It"
+                text: 'I Never Miss:\n Csata során: Felturbózhatod a támadást. Ha nem boostolod fel a támadást, húzz egy kártyát!'
                 size_hint: 1, None
                 height: 60  
             
-            Label:
-                text: 'lila 2'
-                size_hint: 1, None
-                height: 30 
-
-            Label:
-                text: 'I Never Miss'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'prios 3'
-                size_hint: 1, None
-                height: 30 
-
-            Label:
-                text: 'I Planned To Be Here'
+            Image:
+                source: 'piros23.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'piros 2'
+                text: 'I Planned To Be Here:\n Ha a harcosod ezen a mezőn kezdte a kört, ennek a kártyának az értéke 5!'
                 size_hint: 1, None
-                height: 30
+                height: 60
+
+            Image:
+                source: 'piros32.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint: 1, None
+                height: 60
             
             Label:
-                text: 'Master Strategist'
+                text: 'Master Strategist:\n Csata után: Mozgasd Bullseye-t 4 mező távolságra. Olyan mezőkön is áthaladhatsz, ahol az ellenfél harcosai tartózkodnak!'
                 size_hint: 1, None
                 height: 60  
             
-            Label:
-                text: 'lila 3'
+            Image:
+                source: 'lila33.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
-                height: 30                                        
+                height: 60                                       
 
             Label:
-                text: 'Ricochet'
+                text: 'Ricochet:\n Csata után: Ha az ellenfél harcosa nem halt meg, ossz ki 1 sebzést a célpont harcossal ugyan azon zónában tartózkodó harcosnak!'
+                size_hint: 1, None
+                height: 60
+
+            Image:
+                source: 'lila23.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Right Between The Eyes:\n Ha már nyertél egy csatát ebben a körben, az ellenfelednek el kell dobni 1 kártyát!'
+                size_hint: 1, None
+                height: 60  
+            
+            Image:
+                source: 'sarga3.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'lila 3'
+                text: 'Study The Target:\n Húzz 2 kártyát. Ha már nyertél egy csatát ebben a körben, húzz 1 kártyát és kapsz 1 további akciót.'
                 size_hint: 1, None
-                height: 30
+                height: 60
+
+            Image:
+                source: 'lila22.png'
+                allow_stretch: True
+                keep_ratio: True
+                size_hint: 1, None
+                height: 60
             
             Label:
-                text: 'Right Between The Eyes'
+                text: 'Tactical Retreat:\n Csata után: Helyezt Bullseye-t bármely mezőre, a jelenlegi zónádón kívül!'
                 size_hint: 1, None
                 height: 60  
             
-            Label:
-                text: 'lila 3'
-                size_hint: 1, None
-                height: 30 
-
-            Label:
-                text: 'Study The Target'
+            Image:
+                source: 'kek23.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'sárga'
-                size_hint: 1, None
-                height: 30
-            
-            Label:
-                text: 'Tactical Retreat'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'kék 3'
-                size_hint: 1, None
-                height: 30 
-
-            Label:
-                text: "World's Greatest Assassin"
+                text: "World's Greatest Assassin: \n Azonnal: Ha már nyertél egy csatát ebben a körben, hagyd figyelmen kívül az ellenfeled kártyájának értékét."
                 size_hint: 1, None
                 height: 60
 
-            Label:
-                text: 'piros 4'
+            Image:
+                source: 'piros34.png'
+                allow_stretch: True
+                keep_ratio: True
                 size_hint: 1, None
-                height: 30
-
+                height: 60
+                
 <Daredevil>:
     ScrollView:
         do_scroll_y: True
@@ -199,47 +225,88 @@
             size_hint_y: None
             height: 50
             row_default_height: 60
-            cols:1
+            cols:2
 
             Label:
-                text: 'anyad'
+                text: 'Breather:\n Válassz ki egy támadás, védekezés vagy univezális kártyát az eldobott lapjaid közül és vedd vissza a kezedbe.'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: "Devil of Hell's kitchen:\n Csata során: Ha nincs kártya a paklidban, ennek a kártyának az értéke 8.\n Csata után: Keverd vissza ezt a kártyát és a dobópakli legfelső 4 kártyáját a paklidba."
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60 
 
             Label:
-                text: 'anyad'
+                text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: 'Grappling Hook:\n Mozgasd Daredevil-t maximum 2 mező távolságra.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: ''
+                size_hint: 1, None
+                height: 60     
+
+            Label:
+                text: 'Man Without Fear:\n Csata során: Vakon turbózhatod ezt a kártyát. (Dardevil képességével együtt is használhatod)'
+                size_hint: 1, None
+                height: 60
+
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Son of a Boxer:\n Csata után: Ha elvesztetted a csatát, ossz ki 2 sebzést egy szomszédos harcosnak.'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60 
+
+            Label:
+                text: 'Take a Knee:\n Csata után: Dobd el a paklid legfelső lapját és gyógyulj annyit amennyi a turbó értéke.'
+                size_hint: 1, None
+                height: 60
+
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Through Adversity:\n Mozgasd Dardevil-t maximum 4 mezőt. Ellenséges harcosokon is átléphet. Ossz ki 1 sebzést minden ellenséges harcosnak, akin Dardevil átlépett.'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: ''
                 size_hint: 1, None
                 height: 60        
+   
 
 <Elektra>:
     ScrollView:
@@ -254,52 +321,102 @@
             cols:1
 
             Label:
-                text: 'anyad'
+                text: 'Cloaked in Shadow:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!\n Csata után: FELTÁMADVA: Mozgasd Elektrát maximum 3 mezőt.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60 
 
             Label:
-                text: 'anyad'
+                text: 'Hands of Red:\n Csata után: Tegyél vissza egy legyőzött Hand-et Elektra zónájába.'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: 'Intercept:\n Csata során: FELTÁMADVA: Felfedhetsz egy kezedben lévő SAI nevű kártyát, ha így teszel ennek a kártyának az értéke 5 lesz.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60 
 
             Label:
-                text: 'anyad'
+                text: 'Mesmerize:\n Válassz ki egy ellenfelet és nézd meg a kezét. Kapsz 1 további akciót. FELTÁMADVA: Válasz ki egy kártyát, amit el kell dobnia.'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: ''
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: 'Mystic Assassin:\n Csata után: Elektra ossz ki elektrának 3 sebzést. FELTÁMADVA: Ne ossz ki elektrának sebzést.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: ''
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: 'Ninjitsu:\n Csata után: Helyezd a harcosodat bármely mezőre.'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60 
+
+            Label:
+                text: 'Sai:\n Sai. (sai)'
+                size_hint: 1, None
+                height: 60
+
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Snakeroot Clan:\n Azonnal: Elektra helyet cserélhet egy Hand-el, ha így tesz, akkor a Hand lesz a védekező.'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60 
+
+            Label:
+                text: 'The Fist:\n Csata után: Kioszthatsz 1 sebzést a támadó karakternek, ha így teszek vedd vissza ezt a kártyát a kezedbe és kapsz 1 további akciót!'
+                size_hint: 1, None
+                height: 60
+
+            Label:
+                text: ''
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Whirlwind\n Csata után: FELTÁMADVA: Ossz ki 1 sebzést minden szomszédos ellenséges harcosnak.'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: ''
                 size_hint: 1, None
                 height: 60  
 
