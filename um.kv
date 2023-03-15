@@ -68,42 +68,20 @@
             size_hint_x: 1
             height: 50
             row_default_height: 60
-            cols:2
+            cols:1
 
             Label:
                 text: 'Arrogant But Effective:\n Csata után: Bullseye a harc győztese. Mozgasd Bullseye-t maximum 2 mezőt.'
-                size_hint: None, None
-                height: 60
-
-            Image:
-                source: 'lila22.png'
-                allow_stretch: True
-                keep_ratio: True
-                pos_hint: {"x":0.9, "top":0.9}
-                size_hint: None, None
+                size_hint: 1, None
                 height: 60
 
             Label:
                 text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
                 size_hint: 1, None
                 height: 60  
-            
-            Image:
-                source: 'lila22.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
 
             Label:
-                text: 'For My Next Trick:\ Csata után: Mozgasd Bullseyet egy mező távolságra. Húzz egy kártyát.\n Kapsz egy további akciót'
-                size_hint: 1, None
-                height: 60
-
-            Image:
-                source: 'piros22.png'
-                allow_stretch: True
-                keep_ratio: True
+                text: 'For My Next Trick:\n Csata után: Mozgasd Bullseyet egy mező távolságra. Húzz egy kártyát.\n Kapsz egy további akciót'
                 size_hint: 1, None
                 height: 60
             
@@ -111,47 +89,19 @@
                 text: "I'm Better And I'll Prove It:\n Csata során: Ha már nyertél egy csatát ebben a körben, ennek a kártyának az értéke 6."
                 size_hint: 1, None
                 height: 60  
-            
-            Image:
-                source: 'lila22.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
 
             Label:
                 text: 'I Never Miss:\n Csata során: Felturbózhatod a támadást. Ha nem boostolod fel a támadást, húzz egy kártyát!'
                 size_hint: 1, None
                 height: 60  
-            
-            Image:
-                source: 'piros23.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
 
             Label:
                 text: 'I Planned To Be Here:\n Ha a harcosod ezen a mezőn kezdte a kört, ennek a kártyának az értéke 5!'
                 size_hint: 1, None
                 height: 60
-
-            Image:
-                source: 'piros32.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
             
             Label:
                 text: 'Master Strategist:\n Csata után: Mozgasd Bullseye-t 4 mező távolságra. Olyan mezőkön is áthaladhatsz, ahol az ellenfél harcosai tartózkodnak!'
-                size_hint: 1, None
-                height: 60  
-            
-            Image:
-                source: 'lila33.png'
-                allow_stretch: True
-                keep_ratio: True
                 size_hint: 1, None
                 height: 60                                       
 
@@ -159,35 +109,14 @@
                 text: 'Ricochet:\n Csata után: Ha az ellenfél harcosa nem halt meg, ossz ki 1 sebzést a célpont harcossal ugyan azon zónában tartózkodó harcosnak!'
                 size_hint: 1, None
                 height: 60
-
-            Image:
-                source: 'lila23.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
             
             Label:
                 text: 'Right Between The Eyes:\n Ha már nyertél egy csatát ebben a körben, az ellenfelednek el kell dobni 1 kártyát!'
                 size_hint: 1, None
                 height: 60  
-            
-            Image:
-                source: 'sarga3.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
 
             Label:
                 text: 'Study The Target:\n Húzz 2 kártyát. Ha már nyertél egy csatát ebben a körben, húzz 1 kártyát és kapsz 1 további akciót.'
-                size_hint: 1, None
-                height: 60
-
-            Image:
-                source: 'lila22.png'
-                allow_stretch: True
-                keep_ratio: True
                 size_hint: 1, None
                 height: 60
             
@@ -195,26 +124,12 @@
                 text: 'Tactical Retreat:\n Csata után: Helyezt Bullseye-t bármely mezőre, a jelenlegi zónádón kívül!'
                 size_hint: 1, None
                 height: 60  
-            
-            Image:
-                source: 'kek23.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
 
             Label:
                 text: "World's Greatest Assassin: \n Azonnal: Ha már nyertél egy csatát ebben a körben, hagyd figyelmen kívül az ellenfeled kártyájának értékét."
                 size_hint: 1, None
                 height: 60
-
-            Image:
-                source: 'piros34.png'
-                allow_stretch: True
-                keep_ratio: True
-                size_hint: 1, None
-                height: 60
-                
+      
 <Daredevil>:
     ScrollView:
         do_scroll_y: True
@@ -225,15 +140,10 @@
             size_hint_y: None
             height: 50
             row_default_height: 60
-            cols:2
+            cols:1
 
             Label:
                 text: 'Breather:\n Válassz ki egy támadás, védekezés vagy univezális kártyát az eldobott lapjaid közül és vedd vissza a kezedbe.'
-                size_hint: 1, None
-                height: 60
-
-            Label:
-                text: ''
                 size_hint: 1, None
                 height: 60
             
@@ -241,29 +151,14 @@
                 text: "Devil of Hell's kitchen:\n Csata során: Ha nincs kártya a paklidban, ennek a kártyának az értéke 8.\n Csata után: Keverd vissza ezt a kártyát és a dobópakli legfelső 4 kártyáját a paklidba."
                 size_hint: 1, None
                 height: 60  
-            
-            Label:
-                text: ''
-                size_hint: 1, None
-                height: 60 
 
             Label:
                 text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
                 size_hint: 1, None
                 height: 60
-
-            Label:
-                text: ''
-                size_hint: 1, None
-                height: 60
             
             Label:
                 text: 'Grappling Hook:\n Mozgasd Daredevil-t maximum 2 mező távolságra.'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: ''
                 size_hint: 1, None
                 height: 60     
 
@@ -271,43 +166,22 @@
                 text: 'Man Without Fear:\n Csata során: Vakon turbózhatod ezt a kártyát. (Dardevil képességével együtt is használhatod)'
                 size_hint: 1, None
                 height: 60
-
-            Label:
-                text: ''
-                size_hint: 1, None
-                height: 60
             
             Label:
                 text: 'Son of a Boxer:\n Csata után: Ha elvesztetted a csatát, ossz ki 2 sebzést egy szomszédos harcosnak.'
                 size_hint: 1, None
                 height: 60  
-            
-            Label:
-                text: ''
-                size_hint: 1, None
-                height: 60 
 
             Label:
                 text: 'Take a Knee:\n Csata után: Dobd el a paklid legfelső lapját és gyógyulj annyit amennyi a turbó értéke.'
-                size_hint: 1, None
-                height: 60
-
-            Label:
-                text: ''
                 size_hint: 1, None
                 height: 60
             
             Label:
                 text: 'Through Adversity:\n Mozgasd Dardevil-t maximum 4 mezőt. Ellenséges harcosokon is átléphet. Ossz ki 1 sebzést minden ellenséges harcosnak, akin Dardevil átlépett.'
                 size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: ''
-                size_hint: 1, None
                 height: 60        
    
-
 <Elektra>:
     ScrollView:
         do_scroll_y: True
@@ -433,64 +307,64 @@
             cols:1
 
             Label:
-                text: 'anyad'
+                text: 'Blaze of Glory:\n Csata után: Használj fel bármennyi Hellfire-t. Ossz ki annyi sebzést ahány Hellfiret használtál fel az összes Ghost Rider zónájában tartózkodó harcosnak (Ghost Ridert is beleértve).'
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Chains of Hellfire:\n Töltsd fel a Hellfire-det 5-re.'
+                size_hint: 1, None
+                height: 60  
+
+            Label:
+                text: 'Control the Demon:\n Csata során: Ennek a kátyának az értéke Hellfire-jaidnak a száma +1.'
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Deal with the Devil:\n Csata során: Használj fel akármennyi Hellfire-t. Növeld meg ennek a kártyának az értékét az elköltött mennyiséggel.'
+                size_hint: 1, None
+                height: 60  
+
+            Label:
+                text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: 'Hell Rides With Me:\n Mozgasd Ghost Rider-t és maximum egy szomszédját maximum 4 mezőt. Kapsz 2 Hellfire-t. Kapsz 1 további akciót.'
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: 'I Brought The Devil With Me:\n Csata után: Felhasználhatsz 2 Hellfire-t, hogy kapj egy további akciót.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: 'I Finally Escaped Hell:\n Csata után: Felhasználhatsz 1 Hellfiret, hogy mozgasd Ghost Rider-t maximum 2 mezőt.'
+                size_hint: 1, None
+                height: 60     
+
+            Label:
+                text: 'Penance Stare:\n Csata során: Az ellenfél kártyájának turbó értékét add ennek a kártyának az értékéhez. Felhasználhatsz 2 Hellfire-t, hogy mégegyszer hozzáadd az ellenfél kártyájának turbó értékét ennek a kártyának az értékéhez.'
+                size_hint: 1, None
+                height: 60   
+
+            Label:
+                text: 'Spirit Of Vengeance:\n Csata után: Felhasználhatsz 1 Hellfire-t, hogy húzz 2 kártyát.'
                 size_hint: 1, None
                 height: 60 
+                            
+            Label:
+                text: 'Stoke The Flames:\n Csata után: Ha elvesztetted a csatát, annyi Hellfire-t kapsz, amennyi sebzést kaptál.'
+                size_hint: 1, None
+                height: 60   
 
             Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-            
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'anyad'
+                text: 'The Wicked Will Burn:\n Csata után: Ha Ghost Rider másik mezőn kezdte a körét, kapsz 2 Hellfiret.'
                 size_hint: 1, None
                 height: 60 
-
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-            
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60          
 
 <LukeCage>:
     ScrollView:
@@ -505,67 +379,67 @@
             cols:1
 
             Label:
-                text: 'anyad'
+                text: 'Commanding Impact:\n Csata után: Húzz 1 kártyát.'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: 'Daughter of the Dragon:\n Csata során: Ha Misty Knight szomszédos az ellenfél harcosával, ennek a kártyának az értéke 6.'
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
+                text: 'Get Paid:\n Csata után: Ha megnyerted a csatát, húzz 2 kártyát.'
                 size_hint: 1, None
                 height: 60  
             
             Label:
-                text: 'anyad'
+                text: 'Got My Back?:\n Azonnal: Misty Knight helyet cserélhet Luke Cage-val, ha helyet cserélnek Luke Cage az új védekező.'
                 size_hint: 1, None
                 height: 60 
 
             Label:
-                text: 'anyad'
+                text: 'Hero For Hire:\n Csata során: TURBÓZHATOD ezt a támadást.'
                 size_hint: 1, None
                 height: 60
 
             Label:
-                text: 'anyad'
+                text: 'Power Man:\n  Csata után: Mozgasd az ellenfél harcosát maximum 3 mezőt. Ellendséges harcosokon is keresztül mozgathatod. Ossz ki 1 sebzést a harcosnak és minden ellenséges harcosnak, amin átmozgott.'
                 size_hint: 1, None
                 height: 60
             
             Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'anyad'
+                text: 'Pushback:\n Csata után: Mozgasd az ellenfél harcosát maximum 3 mezőt.'
                 size_hint: 1, None
                 height: 60 
 
             Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60
-            
-            Label:
-                text: 'anyad'
-                size_hint: 1, None
-                height: 60  
-            
-            Label:
-                text: 'anyad'
+                text: 'Regroup:\n Csata után: Húzz 1 kártyát. Ha megnyerted a csatát, 2-t húzz 1 helyett.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Skin Like Titanium:\n Csata után: Ha elveszted a csatát, ossz ki annyi sebzést az ellenfélnek, amennyit te kaptál.'
+                size_hint: 1, None
+                height: 60
+
+            Label:
+                text: 'Still Standing:\n Csata után: Ha megnyered a csatát, keverd vissza 2 eldobott kártyádat a paklidba.'
+                size_hint: 1, None
+                height: 60
+            
+            Label:
+                text: 'Sweet Christmas!'
+                size_hint: 1, None
+                height: 60  
+            
+            Label:
+                text: 'Trash Talk:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatásást.\n Csata során: Ha megnyerted a csatát, vége a körnek.'
+                size_hint: 1, None
+                height: 60  
+
+            Label:
+                text: "Where's My Money?:\n Helyezd Luke Cage-t a legközelebbi ellenséges harcos mellé. Kapsz 1 további akciót."
                 size_hint: 1, None
                 height: 60          
 
@@ -582,61 +456,61 @@
             cols:1
 
             Label:
-                text: 'anyad'
+                text: 'A Totally Sane Thing To Do:\n Csata után: Kioszthatsz 2-2 sebzést mindkét csatázó harcosnak.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Feint:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Fist of Khonshu:\n Csata után: Ha megnyerted a csatát, mozgasd az ellenséges harcost maximum 4 mezőt.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Good Enough For Us:\n Csata során: Húzhatsz 2 kártyát. Ha így teszel, kapsz 2 sebzést.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: "I'm Not Real:\n Csata után: A következő személyazonosságodra válthatsz."
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Let Your Insanity Guide You:\n Csata után: Dobd el a paklid legfelső lapját és húzz annyi kártyát amennyi a TURBÓ értéke.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Madness Will Keep You Alive:\n  Gyúgyulsz 2 életerőt. Ha másik mezőn kezdted a köröd, kapsz 1 további akciót.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Past and Present Intermingle:\n Csata során: A legfelső eldobott kártyád TURBÓ értéke hozzáadódik ennek a kártyának az értékéhez.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: "That's The Part I Like:\n Csata után: Ha megnyerted a csatát, megnézheted az ellefeled pakliának legfelső 3 lapját és az egyiket eldobathatod. A másik 2-t tedd vissza tetszőleges sorrendbe."
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: "That's Why I Always Win:\n Csata során: TURBÓzhatod ezt a támadást."
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: 'Travelers of The Night:\n Mozgasd a harcosodat maximum 4 mezőt. Ellenséges harcosokon is átmozoghatsz. Kapsz 1 további akciót.'
                 size_hint: 1, None
                 height: 60  
 
             Label:
-                text: 'anyad'
+                text: "We're All In This Together:\n Csata után: Ha megnyerted a csatát, húzz 1 kártyát."
                 size_hint: 1, None
                 height: 60  
