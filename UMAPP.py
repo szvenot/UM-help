@@ -23,6 +23,7 @@ class LukeCage(Screen):
 class MoonKnight(Screen):
     pass
 
+
 class UMApp(App):
     def build(self):
         sm = ScreenManager()
@@ -30,7 +31,7 @@ class UMApp(App):
         sm.add_widget(Bullseye(name='bullseye'))
         sm.add_widget(Daredevil(name='daredevil'))
         sm.add_widget(Elektra(name='elektra'))
-        sm.add_widget(GhostRider(name='ghostrider'))
+        sm.add_widget(GhostRider(name='ghostraider'))
         sm.add_widget(LukeCage(name='lukecage'))
         sm.add_widget(MoonKnight(name='moonknight'))
 
