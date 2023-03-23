@@ -26,8 +26,7 @@
                 size_hint: 1, None
                 height: 60
                 on_press: root.manager.current = 'bullseye'
-                
-                
+                 
             Button:
                 text: 'Daredevil'
                 
@@ -35,6 +34,12 @@
                 height: 60
                 on_press: root.manager.current = 'daredevil'
                 
+            Button:
+                text: 'DrEllieSattler'
+                
+                size_hint: 1, None
+                height: 60
+                on_press: root.manager.current = 'drelliesattler'
                         
             Button:
                 text: 'Elektra'
@@ -43,14 +48,12 @@
                 height: 60
                 on_press: root.manager.current = 'elektra'
                 
-                
             Button:
                 text: 'Ghost Rider'
                 
                 size_hint: 1, None
                 height: 60
                 on_press: root.manager.current = 'ghostraider'
-                
                 
             Button:
                 text: 'Luke Cage'
@@ -59,13 +62,19 @@
                 height: 60
                 on_press: root.manager.current = 'lukecage'
                 
-            
             Button:
                 text: 'Moon Knight'
                 
                 size_hint: 1, None
                 height: 60
                 on_press: root.manager.current = 'moonknight'
+
+            Button:
+                text: 'TRex'
+                
+                size_hint: 1, None
+                height: 60
+                on_press: root.manager.current = 'trex'
 
 <Bullseye>:
     ScrollView:
@@ -88,7 +97,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'Arrogant But Effective:\nCsata után: Bullseye a harc győztese. Mozgasd Bullseye-t maximum 2 mezőt.'
+                text: '[b]ARROGANT BUT EFFECTIVE:[/b]\nCsata után: Bullseye a harc győztese. Mozgasd Bullseye-t maximum 2 mezőt.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -103,7 +113,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Feint:\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását.'
+                text: '[b]FEINT:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását.'
+                markup: True
                 size_hint: 1, None
                 height: 60  
                 text_size: self.size
@@ -118,7 +129,8 @@
                         pos: self.pos
 
             Label:
-                text: 'For My Next Trick:\nCsata után: Mozgasd Bullseyet egy mező távolságra. Húzz egy kártyát. Kapsz egy további akciót.'
+                text: '[b]FOR MY NEXT TRICK:[/b]\nCsata után: Mozgasd Bullseyet egy mező távolságra. Húzz egy kártyát. Kapsz egy további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -133,7 +145,8 @@
                         pos: self.pos
             
             Label:
-                text: "I'm Better And I'll Prove It:\nCsata során: Ha már nyertél egy csatát ebben a körben, ennek a kártyának az értéke 6."
+                text: "[b]I'M BETTER AND I'LL PROVE IT:[/b]\nCsata során: Ha már nyertél egy csatát ebben a körben, ennek a kártyának az értéke 6."
+                markup: True
                 size_hint: 1, None
                 height: 80  
                 text_size: self.size
@@ -148,7 +161,8 @@
                         pos: self.pos
 
             Label:
-                text: 'I Never Miss:\nCsata során: Felturbózhatod a támadást. Ha nem boostolod fel a támadást, húzz egy kártyát.'
+                text: '[b]I NEVER MISS:[/b]\nCsata során: Felturbózhatod a támadást. Ha nem boostolod fel a támadást, húzz egy kártyát.'
+                markup: True
                 size_hint: 1, None
                 height: 80  
                 text_size: self.size
@@ -163,7 +177,8 @@
                         pos: self.pos
 
             Label:
-                text: 'I Planned To Be Here:\nHa a harcosod ezen a mezőn kezdte a kört, ennek a kártyának az értéke 5.'
+                text: '[b]I PLANNED TO BE HERE:[/b]\nHa a harcosod ezen a mezőn kezdte a kört, ennek a kártyának az értéke 5.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -178,7 +193,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Master Strategist:\nCsata után: Mozgasd Bullseye-t 4 mező távolságra. Olyan mezőkön is áthaladhatsz, ahol az ellenfél harcosai tartózkodnak.'
+                text: '[b]MASTER STRATEGIST:[/b]\nCsata után: Mozgasd Bullseye-t 4 mező távolságra. Olyan mezőkön is áthaladhatsz, ahol az ellenfél harcosai tartózkodnak.'
+                markup: True
                 size_hint: 1, None
                 height: 80  
                 text_size: self.size
@@ -193,7 +209,8 @@
                         pos: self.pos                                   
 
             Label:
-                text: 'Ricochet:\nCsata után: Ha az ellenfél harcosa nem halt meg, ossz ki 1 sebzést a célpont harcossal ugyan azon zónában tartózkodó harcosnak.'
+                text: '[b]RICOCHET:[/b]\nCsata után: Ha az ellenfél harcosa nem halt meg, ossz ki 1 sebzést a célpont harcossal ugyan azon zónában tartózkodó harcosnak.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -208,7 +225,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Right Between The Eyes:\nHa már nyertél egy csatát ebben a körben, az ellenfelednek el kell dobni 1 kártyát.'
+                text: '[b]RIGHT BETWEEN THE:[/b]\nHa már nyertél egy csatát ebben a körben, az ellenfelednek el kell dobni 1 kártyát.'
+                markup: True
                 size_hint: 1, None
                 height: 80  
                 text_size: self.size
@@ -223,7 +241,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Study The Target:\nHúzz 2 kártyát. Ha már nyertél egy csatát ebben a körben, húzz 1 kártyát és kapsz 1 további akciót.'
+                text: '[b]STUDY THE TARGET:[/b]\nHúzz 2 kártyát. Ha már nyertél egy csatát ebben a körben, húzz 1 kártyát és kapsz 1 további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -238,7 +257,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Tactical Retreat:\nCsata után: Helyezt Bullseye-t bármely mezőre, a jelenlegi zónádón kívül.'
+                text: '[b]TACTICAL RETREAT:[/b]\nCsata után: Helyezt Bullseye-t bármely mezőre, a jelenlegi zónádón kívül.'
+                markup: True
                 size_hint: 1, None
                 height: 60 
                 text_size: self.size
@@ -253,7 +273,8 @@
                         pos: self.pos
 
             Label:
-                text: "World's Greatest Assassin: \nAzonnal: Ha már nyertél egy csatát ebben a körben, hagyd figyelmen kívül az ellenfeled kártyájának értékét."
+                text: "[b]WORLD'S GREATEST ASSASSIN:[/b] \nAzonnal: Ha már nyertél egy csatát ebben a körben, hagyd figyelmen kívül az ellenfeled kártyájának értékét."
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -287,7 +308,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'Breather:\nVálassz ki egy támadás, védekezés vagy univezális kártyát az eldobott lapjaid közül és vedd vissza a kezedbe.'
+                text: '[b]BREATHER:[/b]\nVálassz ki egy támadás, védekezés vagy univezális kártyát az eldobott lapjaid közül és vedd vissza a kezedbe.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -302,7 +324,8 @@
                         pos: self.pos
             
             Label:
-                text: "Devil of Hell's kitchen:\nCsata során: Ha nincs kártya a paklidban, ennek a kártyának az értéke 8.\nCsata után: Keverd vissza ezt a kártyát és a dobópakli legfelső 4 kártyáját a paklidba."
+                text: "[b]DEVIL OF HELL'S KITCHEN:[/b]\nCsata során: Ha nincs kártya a paklidban, ennek a kártyának az értéke 8.\nCsata után: Keverd vissza ezt a kártyát és a dobópakli legfelső 4 kártyáját a paklidba."
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -317,7 +340,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Feint:\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                text: '[b]FEINT:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -332,7 +356,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Grappling Hook:\nMozgasd Daredevil-t maximum 2 mező távolságra.'
+                text: '[b]GRAPPLING HOOK:[/b]\nMozgasd Daredevil-t maximum 2 mező távolságra.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -347,7 +372,8 @@
                         pos: self.pos     
 
             Label:
-                text: 'Man Without Fear:\nCsata során: Vakon turbózhatod ezt a kártyát. (Dardevil képességével együtt is használhatod)'
+                text: '[b]MAN WITHOUT FEAR:[/b]\nCsata során: Vakon turbózhatod ezt a kártyát. (Dardevil képességével együtt is használhatod)'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -362,7 +388,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Son of a Boxer:\nCsata után: Ha elvesztetted a csatát, ossz ki 2 sebzést egy szomszédos harcosnak.'
+                text: '[b]SON OF A BOXER:[/b]\nCsata után: Ha elvesztetted a csatát, ossz ki 2 sebzést egy szomszédos harcosnak.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -377,7 +404,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Take a Knee:\nCsata után: Dobd el a paklid legfelső lapját és gyógyulj annyit amennyi a turbó értéke.'
+                text: '[b]TAKE A KNEE:[/b]\nCsata után: Dobd el a paklid legfelső lapját és gyógyulj annyit amennyi a turbó értéke.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -392,7 +420,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Through Adversity:\nMozgasd Dardevil-t maximum 4 mezőt. Ellenséges harcosokon is átléphet. Ossz ki 1 sebzést minden ellenséges harcosnak, akin Dardevil átlépett.'
+                text: '[b]THROUGH ADVERSITY:[/b]\nMozgasd Dardevil-t maximum 4 mezőt. Ellenséges harcosokon is átléphet. Ossz ki 1 sebzést minden ellenséges harcosnak, akin Dardevil átlépett.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -405,7 +434,250 @@
                     Rectangle:
                         size: self.size
                         pos: self.pos        
-   
+
+<DrEllieSattler>:
+    ScrollView:
+        do_scroll_y: True
+        do_scroll_x: False
+
+        GridLayout:
+            orientation: "lr-tb"
+            size_hint_y: None
+            height: 50
+            row_default_height: 60
+            cols:1
+
+            Button:
+                text: 'VISSZA'
+                
+                size_hint: 1, None
+                height: 60
+                on_press: root.manager.current = 'main'
+
+            Label:
+                text: '[b]CHAOTICIAN:[/b]\nCsata után: Helyezz 1 insight érmét bármelyik mezőre.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+            Label:
+                text: '[b]FEINT:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+            Label:
+                text: '[b]HEY! HEY! HEY!:[/b]\nCsata után: Mozgasd a másik harcosodat maximum 4 mezőt.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+            
+            Label:
+                text: "[b]I THINK WE'RE BACK IN BUSINESS:[/b]\nCsata során: Ennek a kártyának az értéke megegyezik a kezedben lévő lapok számával."
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]LIFE FINDS A WAY:[/b]\nCsata után: Az ellenfeled eldobja a paklija legfelső lapját. Dr Ellie Sattler és Dr Malcolm az eldobott kártya TURBÓ értékével megegyező életerőt gyógyul.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+            
+            Label:
+                text: '[b]LOCK THE DOORS!:[/b]\nCsata után: Ossz ki 2 sebzést az ellenfél harcosának. Mozgasd a harcosod maximum 2 mezőt.'
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (0/255, 128/255, 255/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos     
+
+            Label:
+                text: '[b]MUST GO FASTER:[/b]\nCsata után: Ha megnyerted a csatát helyezd Dr Ellie Sattler-t és Dr Malcolm-ot bármely mezőre.'
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+            
+            Label:
+                text: '[b]REGROUP:[/b]\nCsata után: Húzz 1 kártyát. Ha megnyerted a csatát, 2-t húzz 1 helyett.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]SEXISM IN SURVIVAL SITUATIONS:[/b]\nCsata közben: Ha az ellenfél harcosa hős, akkor ennek a kártyának az értéke 4.\nCsata után: Mozgathatod Dr Ellie Sattler-t maximun 1 mezőt.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+            
+            Label:
+                text: '[b]THE CONCEPT OF ATTRACTION:[/b]\nCsata után: A harcosodat egy insight érmét tartalmazó mezőre helyezheted.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (0/255, 128/255, 255/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos        
+  
+            Label:
+                text: '[b]THE FUTURE EX-MRS. MALCOLM:[/b]\nHúzz 2 kártyát. Helyezz 1 insight érmét Dr Malcolm mezőjére. Kapsz 1 további akciót.'
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 191/255, 0/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+            Label:
+                text: '[b]VIOLENTLY, IF NECESSARY:[/b]\nCsata után: Ossz ki 2 sebzést minden ellenséges harcosnak, aki insight értmés mezőn vagy az mellett tartózkodik.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+            Label:
+                text: '[b]WOMAN INHERITS THE EARTH:[/b]\nAzonnal: Húzz 1 kártyát. Dr Ellie Sattler annyi életerőt gyógyul ahány insight érme van a pályán. Vedd le az összes insight érmét a pályáról.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos      
+
+            Label:
+                text: "[b]YOU NEVER HAD CONTROL, THAT'S THE ILLUSION:[/b]\nCsata során: Növeld ennek a kártyának az értékét a pályán lévő insight érmék mennyiségével. Vedd le az összes insight érmét a pályáról."
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 34/255, 34/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos         
+
 <Elektra>:
     ScrollView:
         do_scroll_y: True
@@ -426,7 +698,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'Cloaked in Shadow:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!\n Csata után: FELTÁMADVA: Mozgasd Elektrát maximum 3 mezőt.'
+                text: '[b]CLOACKED IN SHADOW:[/b]\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!\nCsata után: FELTÁMADVA: Mozgasd Elektrát maximum 3 mezőt.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -441,7 +714,8 @@
                         pos: self.pos 
             
             Label:
-                text: 'Hands of Red:\n Csata után: Tegyél vissza egy legyőzött Hand-et Elektra zónájába.'
+                text: '[b]HANDS OF RED:[/b]\n Csata után: Tegyél vissza egy legyőzött Hand-et Elektra zónájába.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -456,7 +730,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Intercept:\nFELTÁMADVA:\nCsata során: Felfedhetsz egy kezedben lévő SAI nevű kártyát, ha így teszel ennek a kártyának az értéke 5 lesz.'
+                text: '[b]INTERCEPT:[/b]\nFELTÁMADVA:\nCsata során: Felfedhetsz egy kezedben lévő SAI nevű kártyát, ha így teszel ennek a kártyának az értéke 5 lesz.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -471,7 +746,8 @@
                         pos: self.pos  
 
             Label:
-                text: 'Mesmerize:\nVálassz ki egy ellenfelet és nézd meg a kezét. Kapsz 1 további akciót.\nFELTÁMADVA: Válasz ki egy kártyát, amit el kell dobnia.'
+                text: '[b]MESMERIZE:[/b]\nVálassz ki egy ellenfelet és nézd meg a kezét. Kapsz 1 további akciót.\nFELTÁMADVA: Válasz ki egy kártyát, amit el kell dobnia.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -486,7 +762,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Mystic Assassin:\nCsata után: Elektra ossz ki elektrának 3 sebzést. FELTÁMADVA: Ne ossz ki elektrának sebzést.'
+                text: '[b]MYSTIC ASSASSIN:[/b]\nCsata után: Elektra ossz ki elektrának 3 sebzést. FELTÁMADVA: Ne ossz ki elektrának sebzést.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -501,7 +778,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Ninjitsu:\nCsata után: Helyezd a harcosodat bármely mezőre.'
+                text: '[b]NINJUTSU:[/b]\nCsata után: Helyezd a harcosodat bármely mezőre.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -516,9 +794,10 @@
                         pos: self.pos  
 
             Label:
-                text: 'Sai:\nSai. (sai)'
+                text: '[b]SAI:[/b]\nSai.\n(sai)'
+                markup: True
                 size_hint: 1, None
-                height: 40
+                height: 60
                 text_size: self.size
                 halign: 'left'
                 valign: 'top'
@@ -531,7 +810,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Snakeroot Clan:\nAzonnal: Elektra helyet cserélhet egy Hand-el, ha így tesz, akkor a Hand lesz a védekező.'
+                text: '[b]SNAKEROOT CLAN:[/b]\nAzonnal: Elektra helyet cserélhet egy Hand-el, ha így tesz, akkor a Hand lesz a védekező.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -546,7 +826,8 @@
                         pos: self.pos
 
             Label:
-                text: 'The Fist:\nCsata után: Kioszthatsz 1 sebzést a támadó karakternek, ha így teszek vedd vissza ezt a kártyát a kezedbe és kapsz 1 további akciót!'
+                text: '[b]THE FIST:[/b]\nCsata után: Kioszthatsz 1 sebzést a támadó karakternek, ha így teszek vedd vissza ezt a kártyát a kezedbe és kapsz 1 további akciót!'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -561,7 +842,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Whirlwind\nFELTÁMADVA:\nCsata után: Ossz ki 1 sebzést minden szomszédos ellenséges harcosnak.'
+                text: '[b]WHIRLWIND[/b]\nFELTÁMADVA:\nCsata után: Ossz ki 1 sebzést minden szomszédos ellenséges harcosnak.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -595,7 +877,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'Blaze of Glory:\nCsata után: Használj fel bármennyi Hellfire-t. Ossz ki annyi sebzést ahány Hellfiret használtál fel az összes Ghost Rider zónájában tartózkodó harcosnak (Ghost Ridert is beleértve).'
+                text: '[b]BLAZE OF GLORY:[/b]\nCsata után: Használj fel bármennyi Hellfire-t. Ossz ki annyi sebzést ahány Hellfiret használtál fel az összes Ghost Rider zónájában tartózkodó harcosnak (Ghost Ridert is beleértve).'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -610,7 +893,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Chains of Hellfire:\nTöltsd fel a Hellfire-det 5-re.'
+                text: '[b]CHAINS OF HELLFIRE:[/b]\nTöltsd fel a Hellfire-det 5-re.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -625,7 +909,8 @@
                         pos: self.pos  
 
             Label:
-                text: 'Control the Demon:\nCsata során: Ennek a kátyának az értéke Hellfire-jaidnak a száma +1.'
+                text: '[b]CONTROL THE DEMON:[/b]\nCsata során: Ennek a kátyának az értéke Hellfire-jaidnak a száma +1.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -640,7 +925,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Deal with the Devil:\nCsata során: Használj fel akármennyi Hellfire-t. Növeld meg ennek a kártyának az értékét az elköltött mennyiséggel.'
+                text: '[b]DEAL WITH THE DEVIL:[/b]\nCsata során: Használj fel akármennyi Hellfire-t. Növeld meg ennek a kártyának az értékét az elköltött mennyiséggel.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -655,7 +941,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Feint:\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                text: '[b]FEINT:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -670,7 +957,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Hell Rides With Me:\nMozgasd Ghost Rider-t és maximum egy szomszédját maximum 4 mezőt. Kapsz 2 Hellfire-t. Kapsz 1 további akciót.'
+                text: '[b]HELL RIDES WITH ME:[/b]\nMozgasd Ghost Rider-t és maximum egy szomszédját maximum 4 mezőt. Kapsz 2 Hellfire-t. Kapsz 1 további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -685,7 +973,8 @@
                         pos: self.pos
             
             Label:
-                text: 'I Brought The Devil With Me:\nCsata után: Felhasználhatsz 2 Hellfire-t, hogy kapj egy további akciót.'
+                text: '[b]I BROUGHT THE DEVIL WITH ME:[/b]\nCsata után: Felhasználhatsz 2 Hellfire-t, hogy kapj egy további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -700,7 +989,8 @@
                         pos: self.pos  
             
             Label:
-                text: 'I Finally Escaped Hell:\nCsata után: Felhasználhatsz 1 Hellfiret, hogy mozgasd Ghost Rider-t maximum 2 mezőt.'
+                text: '[b]I FINALLY ESCAPED HELL:[/b]\nCsata után: Felhasználhatsz 1 Hellfiret, hogy mozgasd Ghost Rider-t maximum 2 mezőt.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -715,7 +1005,8 @@
                         pos: self.pos   
 
             Label:
-                text: 'Penance Stare:\nCsata során: Az ellenfél kártyájának turbó értékét add ennek a kártyának az értékéhez. Felhasználhatsz 2 Hellfire-t, hogy mégegyszer hozzáadd az ellenfél kártyájának turbó értékét ennek a kártyának az értékéhez.'
+                text: '[b]PENANCE STARE:[/b]\nCsata során: Az ellenfél kártyájának turbó értékét add ennek a kártyának az értékéhez. Felhasználhatsz 2 Hellfire-t, hogy mégegyszer hozzáadd az ellenfél kártyájának turbó értékét ennek a kártyának az értékéhez.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -730,7 +1021,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Spirit Of Vengeance:\nCsata után: Felhasználhatsz 1 Hellfire-t, hogy húzz 2 kártyát.'
+                text: '[b]SPIRIT OF VENGEANCE:[/b]\nCsata után: Felhasználhatsz 1 Hellfire-t, hogy húzz 2 kártyát.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -745,7 +1037,8 @@
                         pos: self.pos
                             
             Label:
-                text: 'Stoke The Flames:\nCsata után: Ha elvesztetted a csatát, annyi Hellfire-t kapsz, amennyi sebzést kaptál.'
+                text: '[b]STOKE THE FLAMES:[/b]\nCsata után: Ha elvesztetted a csatát, annyi Hellfire-t kapsz, amennyi sebzést kaptál.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -760,7 +1053,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'The Wicked Will Burn:\nCsata után: Ha Ghost Rider másik mezőn kezdte a körét, kapsz 2 Hellfiret.'
+                text: '[b]THE WICKED WILL BURN:[/b]\nCsata után: Ha Ghost Rider másik mezőn kezdte a körét, kapsz 2 Hellfiret.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -794,7 +1088,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'Commanding Impact:\n Csata után: Húzz 1 kártyát.'
+                text: '[b]COMMANDING IMPACT:[/b]\nCsata után: Húzz 1 kártyát.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -809,7 +1104,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Daughter of the Dragon:\n Csata során: Ha Misty Knight szomszédos az ellenfél harcosával, ennek a kártyának az értéke 6.'
+                text: '[b]DAUGHTER OF THE DRAGON:[/b]\nCsata során: Ha Misty Knight szomszédos az ellenfél harcosával, ennek a kártyának az értéke 6.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -824,7 +1120,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Get Paid:\n Csata után: Ha megnyerted a csatát, húzz 2 kártyát.'
+                text: '[b]GET PAID:[/b]\nCsata után: Ha megnyerted a csatát, húzz 2 kártyát.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -839,7 +1136,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Got My Back?:\n Azonnal: Misty Knight helyet cserélhet Luke Cage-val, ha helyet cserélnek Luke Cage az új védekező.'
+                text: '[b]GOT MY BACK?:[/b]\nAzonnal: Misty Knight helyet cserélhet Luke Cage-val, ha helyet cserélnek Luke Cage az új védekező.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -854,7 +1152,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Hero For Hire:\n Csata során: TURBÓZHATOD ezt a támadást.'
+                text: '[b]HERO FOR HIRE:[/b]\nCsata során: TURBÓZHATOD ezt a támadást.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -869,7 +1168,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Power Man:\n  Csata után: Mozgasd az ellenfél harcosát maximum 3 mezőt. Ellendséges harcosokon is keresztül mozgathatod. Ossz ki 1 sebzést a harcosnak és minden ellenséges harcosnak, amin átmozgott.'
+                text: '[b]POWER MAN:[/b]\nCsata után: Mozgasd az ellenfél harcosát maximum 3 mezőt. Ellendséges harcosokon is keresztül mozgathatod. Ossz ki 1 sebzést a harcosnak és minden ellenséges harcosnak, amin átmozgott.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -884,7 +1184,8 @@
                         pos: self.pos
             
             Label:
-                text: 'Pushback:\n Csata után: Mozgasd az ellenfél harcosát maximum 3 mezőt.'
+                text: '[b]PUSHBACK:[/b]\nCsata után: Mozgasd az ellenfél harcosát maximum 3 mezőt.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -899,7 +1200,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Regroup:\n Csata után: Húzz 1 kártyát. Ha megnyerted a csatát, 2-t húzz 1 helyett.'
+                text: '[b]REGROUP:[/b]\nCsata után: Húzz 1 kártyát. Ha megnyerted a csatát, 2-t húzz 1 helyett.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -914,7 +1216,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Skin Like Titanium:\n Csata után: Ha elveszted a csatát, ossz ki annyi sebzést az ellenfélnek, amennyit te kaptál.'
+                text: '[b]SKIN LIKE TITANIUM:[/b]\nCsata után: Ha elveszted a csatát, ossz ki annyi sebzést az ellenfélnek, amennyit te kaptál.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -929,7 +1232,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Still Standing:\n Csata után: Ha megnyered a csatát, keverd vissza 2 eldobott kártyádat a paklidba.'
+                text: '[b]STILL STANDING:[/b]\nCsata után: Ha megnyered a csatát, keverd vissza 2 eldobott kártyádat a paklidba.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -944,9 +1248,10 @@
                         pos: self.pos
             
             Label:
-                text: 'Sweet Christmas!'
+                text: '[b]SWEET CHRISTMAS![/b]\nSweet christmas!'
+                markup: True
                 size_hint: 1, None
-                height: 40
+                height: 60
                 text_size: self.size
                 halign: 'left'
                 valign: 'top'
@@ -959,7 +1264,8 @@
                         pos: self.pos 
             
             Label:
-                text: 'Trash Talk:\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatásást.\n Csata során: Ha megnyerted a csatát, vége a körnek.'
+                text: '[b]TRASH TALK:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatásást.\nCsata során: Ha megnyerted a csatát, vége a körnek.'
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -974,7 +1280,8 @@
                         pos: self.pos 
 
             Label:
-                text: "Where's My Money?:\n Helyezd Luke Cage-t a legközelebbi ellenséges harcos mellé. Kapsz 1 további akciót."
+                text: "[b]WHERE'S MY MONEY?:[/b]\nHelyezd Luke Cage-t a legközelebbi ellenséges harcos mellé. Kapsz 1 további akciót."
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1008,7 +1315,8 @@
                 on_press: root.manager.current = 'main'
 
             Label:
-                text: 'A Totally Sane Thing To Do:\nCsata után: Kioszthatsz 2-2 sebzést mindkét csatázó harcosnak.'
+                text: '[b]A TOTALLY SANE THING TO DO[/b]\nCsata után: Kioszthatsz 2-2 sebzést mindkét csatázó harcosnak.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -1023,7 +1331,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Feint:\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását.'
+                text: '[b]FEINT:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -1038,7 +1347,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Fist of Khonshu:\nCsata után: Ha megnyerted a csatát, mozgasd az ellenséges harcost maximum 4 mezőt.'
+                text: '[b]FIST OF KHONSHU:[/b]\nCsata után: Ha megnyerted a csatát, mozgasd az ellenséges harcost maximum 4 mezőt.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1053,7 +1363,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Good Enough For Us:\nCsata során: Húzhatsz 2 kártyát. Ha így teszel, kapsz 2 sebzést.'
+                text: '[b]GOOD ENOUGH FOR US:[/b]\nCsata során: Húzhatsz 2 kártyát. Ha így teszel, kapsz 2 sebzést.'
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -1068,7 +1379,8 @@
                         pos: self.pos 
 
             Label:
-                text: "I'm Not Real:\nCsata után: A következő személyazonosságodra válthatsz."
+                text: "[b]I'M NOT REAL:[/b]\nCsata után: A következő személyazonosságodra válthatsz."
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -1083,7 +1395,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Let Your Insanity Guide You:\nCsata után: Dobd el a paklid legfelső lapját és húzz annyi kártyát amennyi a TURBÓ értéke.'
+                text: '[b]LET YOUR INSANITY GUIDE YOU:[/b]\nCsata után: Dobd el a paklid legfelső lapját és húzz annyi kártyát amennyi a TURBÓ értéke.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1098,7 +1411,8 @@
                         pos: self.pos 
 
             Label:
-                text: 'Madness Will Keep You Alive:\nGyúgyulsz 2 életerőt. Ha másik mezőn kezdted a köröd, kapsz 1 további akciót.'
+                text: '[b]MADNESS WILL KEEP YOU ALIVE:[/b]\nGyúgyulsz 2 életerőt. Ha másik mezőn kezdted a köröd, kapsz 1 további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1113,7 +1427,8 @@
                         pos: self.pos  
 
             Label:
-                text: 'Past and Present Intermingle:\nCsata során: A legfelső eldobott kártyád TURBÓ értéke hozzáadódik ennek a kártyának az értékéhez.'
+                text: '[b]PAST AND PRESENT INTERMINGLE:[/b]\nCsata során: A legfelső eldobott kártyád TURBÓ értéke hozzáadódik ennek a kártyának az értékéhez.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1128,7 +1443,8 @@
                         pos: self.pos 
 
             Label:
-                text: "That's The Part I Like:\nCsata után: Ha megnyerted a csatát, megnézheted az ellefeled pakliának legfelső 3 lapját és az egyiket eldobathatod. A másik 2-t tedd vissza tetszőleges sorrendbe."
+                text: "[b]THAT'S THE PART I LIKE:[/b]\nCsata után: Ha megnyerted a csatát, megnézheted az ellefeled pakliának legfelső 3 lapját és az egyiket eldobathatod. A másik 2-t tedd vissza tetszőleges sorrendbe."
+                markup: True
                 size_hint: 1, None
                 height: 100
                 text_size: self.size
@@ -1143,7 +1459,8 @@
                         pos: self.pos 
 
             Label:
-                text: "That's Why I Always Win:\nCsata során: TURBÓzhatod ezt a támadást."
+                text: "[b]THAT'S WHY U ALWAYS WIN:[/b]\nCsata során: TURBÓzhatod ezt a támadást."
+                markup: True
                 size_hint: 1, None
                 height: 60
                 text_size: self.size
@@ -1158,7 +1475,8 @@
                         pos: self.pos
 
             Label:
-                text: 'Travelers of The Night:\nMozgasd a harcosodat maximum 4 mezőt. Ellenséges harcosokon is átmozoghatsz. Kapsz 1 további akciót.'
+                text: '[b]TRAVELERS OF THE NIGHT:[/b]\nMozgasd a harcosodat maximum 4 mezőt. Ellenséges harcosokon is átmozoghatsz. Kapsz 1 további akciót.'
+                markup: True
                 size_hint: 1, None
                 height: 80
                 text_size: self.size
@@ -1173,9 +1491,205 @@
                         pos: self.pos 
 
             Label:
-                text: "We're All In This Together:\nCsata után: Ha megnyerted a csatát, húzz 1 kártyát."
+                text: "[b]WE'RE ALL IN THIS TOGETHER:[/b]\nCsata után: Ha megnyerted a csatát, húzz 1 kártyát."
+                markup: True
                 size_hint: 1, None
                 height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (0/255, 128/255, 255/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+<TRex>:
+    ScrollView:
+        do_scroll_y: True
+        do_scroll_x: False
+
+        GridLayout:
+            orientation: "lr-tb"
+            size_hint_y: None
+            height: 50
+            row_default_height: 60
+            cols:1
+
+            Button:
+                text: 'VISSZA'
+                
+                size_hint: 1, None
+                height: 60
+                on_press: root.manager.current = 'main'
+
+            Label:
+                text: '[b]15 000 POUNDS OF MUSCLE[/b]\nCsata közben: Hagyd figyelmen kívül az ellenfél kártyájának értékét.\nCsata után: Kapsz 2 sebzést.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 34/255, 34/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+            Label:
+                text: '[b]65 MILLION YEARS OF GUT INSTINCT:[/b]\nVálassz ki egy nem "65 MILLION YEARS OF GUT INSTINCT" nevű kártyát a dobópaklidból és vedd vissza a kezedbe..'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 191/255, 0/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]CLOSER THAN SHE APPEARS:[/b]\nMozgasd a harcosod maximum 1 mezőt. Húzz 1 kártyát. Kapsz 1 további akciót.'
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 191/255, 0/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]COMMANDING IMPACT:[/b]\nCsata után: Húzz 1 kártyát.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 34/255, 34/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: "[b]MOMENTOUS SHIFT:[/b]\nCsata során: Ha a harcosod másik mezőn kezdte a körét, ennek a kártyának az értéke 5."
+                markup: True
+                size_hint: 1, None
+                height: 80
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]RECKLESS LUNGE:[/b]\nCsata után: Ossz ki 3 sebzést az ellenfél harcosának. Kapsz 3 sebzést.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 34/255, 34/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: '[b]RIPPLES IN THE WATER:[/b]\nHelyezd T.Rex-et a zónáján belül bármelyik mezőre. Az összes ellenfél, akinek harcosa áll melletted, eldob 1 lapot.'
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 191/255, 0/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos  
+
+            Label:
+                text: '[b]TERRIFYING ROAR:[/b]\nAzonnal: A harcosok nem hagyhatják el a helyüket a kör végéig.'
+                markup: True
+                size_hint: 1, None
+                height: 60
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: "[b]THRASH:[/b]\nCsata során: TURBÓzhatod ezt a kártyát.\nCsata után: Ha megnyerted a csatát, ossz ki 1 sebzést minden ellenséges harcosnak T.Rex zónájában."
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (128/255, 0/255, 128/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos 
+
+            Label:
+                text: "[b]WHEN DINOSAURUS RULED THE EARTH:[/b]\nCsata során: TURBÓzhatod ezt a kártyát.\nCsata után: Ha megnyerted a csatát, húzz 1 kártyát, kapsz 1 további akcitót és kapsz 2 sebzést."
+                markup: True
+                size_hint: 1, None
+                height: 100
+                text_size: self.size
+                halign: 'left'
+                valign: 'top'
+                background_color: (255/255, 34/255, 34/255, 1)
+			    canvas.before:
+                    Color:
+                        rgba: self.background_color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+            Label:
+                text: "[b]YOU'RE JUST MAKING HER ANGRY:[/b]\nCSATA SORÁN: TURBÓzhatod ezt a kártyát.\n Csata után: Ha megnyerted a csatát, visszaveheted ezt a kártyát a kezedbe."
+                markup: True
+                size_hint: 1, None
+                height: 100
                 text_size: self.size
                 halign: 'left'
                 valign: 'top'
