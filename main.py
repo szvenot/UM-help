@@ -42,7 +42,6 @@ class UMApp(App):
         sm.add_widget(LukeCage(name='lukecage'))
         sm.add_widget(MoonKnight(name='moonknight'))
         sm.add_widget(TRex(name='trex'))
-
         return sm
 
 if __name__=='__main__':
