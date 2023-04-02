@@ -108,7 +108,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nBullseye 5 mező távolságra is támadhat (zónákat figyelmen kívül hagyva).\n[b]MEGJEGYZÉS:[/b]\nZónán bellüli ellenfeleket továbbra is támadhatsz.'
@@ -336,7 +337,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nCsata során: Vakon TURBÓzhatod a támadásaidat és védekezéseidet.(Ha van másik csata során képességed, te döntesz az aktiválás sorrendjéről).\n[b]MEGJEGYZÉS:[/b]\nVak TURBÓZásnál dobd el a paklid legfelső lapját és annak TURBÓ értékét add a harci értékedhez. Nem lehet érvényteleníteni ezt a képességet. Védekezéskor a támadóval szembeni elsőbbség vonatkozik erre a képességre is.'
@@ -501,7 +503,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nMiután Dr Ellie Sattler vagy Dr Malcolm mozgott, tegyél egy Insight érmét a mezőre ahol megálltak. 5 Insight érméd van.\n[b]MEGJEGYZÉS:[/b]\nHa bármely harcosod új mezőre mozog, tegyél egy Insight érmét oda. Olyan mezőre is tehetsz Insight érmét, ahol már van bármlyen érme. Kártyáid segítségével interakciózhatsz az Insight érmékkel. Ha leveszed őket a pályáról, tedd a készletedbe őket, később visszateheted őket. Ha nem tudsz többet letenni a páylára, egyszerűen nem teszel le többet.'
@@ -762,7 +765,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
                     
             Label:
@@ -960,7 +964,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
         
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nGhost Rider 5 Hellfire-val kezdi a játékot. Mozgás akció közben felhasználhasz egy Hellfire-t. Ha így teszel, akkor a mozgás értéked 4 lesz és ellenséges harcosokon is átléphetsz. Mozgás után ossz ki 1 sebzést minden ellenséges harcosnak akin átléptél.\n[b]MEGJEGYZÉS:[/b]\nKépességed használata közben nem TURBÓzhatod a mozgásod.'
@@ -1034,7 +1039,7 @@
                 size: self.texture_size
                 halign: 'left'
                 valign: 'top'
-                background_color: (128/255, 0/255, 128/255, 1)
+                background_color: (0/255, 128/255, 255/255, 1)
 			    canvas.before:
                     Color:
                         rgba: self.background_color
@@ -1189,7 +1194,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
         
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nLuke Cage 2-vel kevesebb sebzést kap támadásoknál. (Védekezéskor akkor is megnyered a harcot, ha kártya kijátszása nélkül nem kapsz sebzést)'
@@ -1434,7 +1440,8 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
             Label:
                 text: '[b]KÉPESSÉG:[/b]\nKöröd végén, válts személyazonosságot (Sorrend: Moon Knight -> Khonshu -> Mr. Knight, majd ezt ismételd).\n[b]MOON KNIGHT:[/b]\n A köröd elején léphetsz maximum 2 mezőt.\n[b]KHONSHU:[/b]\n +2 minden támadó kártyád értékéhez. Harci sebzésen kívüli hatásokból nem kapsz sebzést.\n[b]MR. KNIGHT:[/b]\n +1 minden védekező értékedhez.\n[b]MEGJEGYZÉS:[/b]\nMoon Knight-ként kezded a játékot. Muszáj személyazonosságot váltanod a köröd végén. Ugyan annyi élete van minden személyazonosságodnak.'
@@ -1663,10 +1670,11 @@
             orientation: "lr-tb"
             size_hint_y: None
             height: self.minimum_height 
-            cols:1
+            spacing: 1
+            cols: 1
 
             Label:
-                text: '[b]KÉPESSÉG:[/b]\nT-rex egy nagy harcos.(2 mező távolságra is támadhatsz.) A köröd végén húzz 1 kártyát.\n[b]MEGJEGYZÉS:[/b]\nNagy harcosok 2 mezőt foglalnak el. Bármely elfoglalt mezőjükről kezdhetik a mozgást. A bábu feje mindig arra nézzen, amerre léptél. Egyiányú utakat és titkos átjárókat nem használhatsz.'
+                text: '[b]KÉPESSÉG:[/b]\nT-rex egy nagy harcos.(2 mező távolságra is támadhatsz.) A köröd végén húzz 1 kártyát.\n[b]MEGJEGYZÉS:[/b]\nNagy harcosok 2 mezőt foglalnak el. Bármely elfoglalt mezőjükről kezdhetik a mozgást. A bábu feje mindig arra nézzen, amerre léptél. Egyirányú utakat és titkos átjárókat nem használhatsz.'
                 markup: True
                 size_hint_y: None
                 text_size: root.width, None
