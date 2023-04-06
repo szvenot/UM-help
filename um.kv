@@ -1,3 +1,15 @@
+<Splash>:
+    FloatLayout:  
+        Label:
+            text: '[b]Üdvözöllek az UNMATCHED magyar segédletben.\nAz applikáció célja, hogy segítséget nyújtson a magyar közönségnek a magyarul meg nem jelent kiegészítők használatához. Ez egy fan-made applikáció, nem célja a profit szerzés. Ha bármi észrevételed, kritikád van az applikációval kapcsolatban, pl. helyesírási hiba, design javaslat, stb. jelezd felém e-mailben:\n martinhun19951106@gmail.com[/b]'
+            markup: True
+            font_size: self.width/20
+            size_hint_y: 1
+            text_size: root.width, None
+            size: self.texture_size
+            halign: 'center'
+            valign: 'middle'
+
 <UM>:
     ScrollView:
         do_scroll_y: True
@@ -164,6 +176,7 @@
                 markup: True
                 size_hint_y: None
                 text_size: root.width, None
+                size: self.texture_size
                 halign: 'left'
                 valign: 'top'
                 background_color: (255/255, 34/255, 34/255, 1)
@@ -786,7 +799,7 @@
                         pos: self.pos
 
             Label:
-                text: '[b]CLOACKED IN SHADOW:[/b]\n Azonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!\nCsata után: FELTÁMADVA: Mozgasd Elektrát maximum 3 mezőt.'
+                text: '[b]CLOACKED IN SHADOW:[/b]\nAzonnal: Érvénytelenítsd az ellenfeled kártyájának összes hatását!\nCsata után: FELTÁMADVA: Mozgasd Elektrát maximum 3 mezőt.'
                 markup: True
                 size_hint_y: None
                 text_size: root.width, None
@@ -802,7 +815,7 @@
                         pos: self.pos 
             
             Label:
-                text: '[b]HANDS OF RED:[/b]\n Csata után: Tegyél vissza egy legyőzött Hand-et Elektra zónájába.'
+                text: '[b]HANDS OF RED:[/b]\nCsata után: Tegyél vissza egy legyőzött Hand-et Elektra zónájába.'
                 markup: True
                 size_hint_y: None
                 text_size: root.width, None
@@ -882,7 +895,7 @@
                         pos: self.pos  
 
             Label:
-                text: '[b]SAI:[/b]\nSai.\n(sai)'
+                text: '[b]SAI:[/b]\nSai.'
                 markup: True
                 size_hint_y: None
                 text_size: root.width, None

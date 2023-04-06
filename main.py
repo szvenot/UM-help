@@ -1,6 +1,9 @@
 from kivy.app import App
 from kivy.uix.screenmanager import Screen, ScreenManager
-from kivy.uix.button import Button
+from kivy.clock import Clock
+
+class Splash(Screen):
+    pass
 
 class UM(Screen):
     pass
@@ -32,7 +35,9 @@ class TRex(Screen):
 class UMApp(App):
     def build(self):
         self.icon = "HUUM.png"
+        global sm
         sm = ScreenManager()
+        sm.add_widget(Splash(name='splash'))
         sm.add_widget(UM(name='main'))
         sm.add_widget(Bullseye(name='bullseye'))
         sm.add_widget(Daredevil(name='daredevil'))
@@ -43,6 +48,12 @@ class UMApp(App):
         sm.add_widget(MoonKnight(name='moonknight'))
         sm.add_widget(TRex(name='trex'))
         return sm
+    
+    def on_start(self):
+        Clock.schedule_once(self.ummain, 5)
+
+    def ummain(*args):
+        sm.current = 'main'
 
 if __name__=='__main__':
     UMApp().run()
